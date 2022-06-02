@@ -30,4 +30,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: test-action
           directory: build/site
-          gitHubToken: ${{ secrets.GH_TOKEN }}
+          gitHubToken: ${{ secrets.GH_ACTION }}
