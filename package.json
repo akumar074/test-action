@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/kiegroup/kogito-docs.git"
   },
+  "scripts": {
+    "build": "npx antora --extension @antora/lunr-extension --fetch antora-playbook-author.yml --stacktrace"
+  },
   "keywords": [
     "kogito",
     "serverless workflow"
