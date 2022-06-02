@@ -7,7 +7,10 @@
     "url": "git+https://github.com/kiegroup/kogito-docs.git"
   },
   "scripts": {
-    "build": "npx antora --fetch antora-playbook-author.yml --stacktrace"
+    "local-install-build": "npm i && npx antora antora-playbook-author.yml --stacktrace",
+    "local-build": "npx antora antora-playbook-author.yml --stacktrace",
+    "install-build": "npm i && npx antora antora-playbook.yml --stacktrace",
+    "build": "npx antora antora-playbook.yml --stacktrace"
   },
   "keywords": [
     "kogito",
