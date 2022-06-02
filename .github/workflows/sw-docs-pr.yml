@@ -22,7 +22,7 @@ jobs:
       - run: export NODE_PATH="$(npm -g root)"
       - run: npm -v
       - run: npm i -g @antora/cli @antora/site-generator @antora/lunr-extension
-      - run: antora --extension @antora/lunr-extension --fetch serverlessworkflow/antora-playbook.yml --stacktrace
+      - run: antora --extension @antora/lunr-extension --fetch antora-playbook.yml --stacktrace
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
         with:
