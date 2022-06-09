@@ -27,6 +27,7 @@ jobs:
     - run: npm ci
     - run: npm run install-build
     - run: touch build/site/.nojekyll
+    - run: tree build/site
     - name: Deploy with gh-pages
       shell: bash
       working-directory: ./build/site
