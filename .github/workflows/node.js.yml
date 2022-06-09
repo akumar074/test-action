@@ -26,8 +26,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run install-build
-    - run: touch build/site/.nojekyll
-    - run: tree build/site
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
