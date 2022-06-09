@@ -31,6 +31,7 @@ jobs:
       working-directory: ./build/site
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        touch .nojekyll
         npx gh-pages -d ./ -u "github-actions-bot <support+actions@github.com>" b gh-pages
       env:
         GITHUB_TOKEN: "${{ secrets.GH_ACTION }}"
