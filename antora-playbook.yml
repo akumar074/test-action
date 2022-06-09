@@ -13,7 +13,15 @@ ui:
   bundle:
     url: ./antora/ui-bundle.zip
     snapshot: true
-  supplemental_files: ./antora/supplemental-ui
+  supplemental_files:
+  - path: supplemental-ui
+    contents: ./antora/supplemental-ui
+  - path: .nojekyll
+    contents: ./supplemental-ui/.nojekyll
+  - path: ui.yml
+    contents: |
+      static_files:
+        - .nojekyll
 asciidoc:
   attributes:
     linkattrs: ''
