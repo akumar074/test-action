@@ -31,9 +31,19 @@ jobs:
     - run: npm run install-build
     - run: touch build/site/.nojekyll
     - run: tree build/site
-    - name: Publish to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      with:
-        branch: gh-pages
-        token: ${{ secrets.GH_ACTION }}
-        folder: build/site
+    - name: Deploy with gh-pages
+      shell: bash
+      working-directory: ./build/site
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git add .nojekyll
+        git commit -m "Added .nojekyll file"
+        npx gh-pages -d ./ -u "github-actions-bot <support+actions@github.com>" b gh-pages
+      env:
+        GITHUB_TOKEN: "${{ secrets.GH_ACTION }}"
+#     - name: Publish to GitHub Pages
+#       uses: JamesIves/github-pages-deploy-action@v4.3.3
+#       with:
+#         branch: gh-pages
+#         token: ${{ secrets.GH_ACTION }}
+#         folder: build/site
