@@ -32,7 +32,7 @@ jobs:
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GH_ACTION }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: build/site
 #     - name: Publish to GitHub Pages
 #       uses: JamesIves/github-pages-deploy-action@v4.3.3
