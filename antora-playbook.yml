@@ -6,25 +6,17 @@ antora:
     - require: '@antora/lunr-extension'
 content:
   sources:
-    - url: git@github.com:kiegroup/kogito-docs.git
+    - url: git@github.com:akumar074/test-action.git
       branches: [main]
       start_path: serverlessworkflow
 ui:
   bundle:
     url: ./antora/ui-bundle.zip
     snapshot: true
-  supplemental_files:
-  - path: supplemental-ui
-    contents: ./antora/supplemental-ui
-  - path: .nojekyll
-    contents: ./supplemental-ui/.nojekyll
-  - path: ui.yml
-    contents: |
-      static_files:
-        - .nojekyll
+  supplemental_files: ./antora/supplemental-ui
 asciidoc:
+  extensions:
+  - asciidoctor-emoji
   attributes:
     linkattrs: ''
     toc: ~
-    quarkus_version: '2.9.1.Final'
-    required_maven_version: '3.8.1+'
