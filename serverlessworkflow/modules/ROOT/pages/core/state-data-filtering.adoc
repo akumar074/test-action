@@ -1,2 +1,1 @@
 = State data filtering
-== Added some new lines
