@@ -1,0 +1,8 @@
+.home table, th, h2, td {
+    border: none !important;
+}
+
+.home th {
+    /*font-weight: bold !important;*/
+    font-size: 1.5em !important;
+}

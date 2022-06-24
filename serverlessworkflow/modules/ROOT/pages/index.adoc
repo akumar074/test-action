@@ -1,1 +1,52 @@
-== Home page
+:page-layout: tiles
+++++
+<div class="home">
+++++
+
+== Getting Started
+:card-style: cols="1,1"
+[{card-style}]
+|===
+| xref:getting-started/create-your-first-workflow-service.adoc[Create your first workflow service] | xref:getting-started/getting-familiar-with-our-tooling.adoc[Getting familiar with our tooling]
+
+|This guide describes how to create a Serverless Workflow application
+that serves a hello_world endpoint
+
+|This guide describes how to create a Serverless Workflow application
+that serves a hello_world endpoint
+|===
+[{card-style}]
+|===
+|xref:getting-started/cncf-serverless-workflow-specification-support.adoc[CNCF Serverless Workflow specification] |
+
+|This document describes the information about Kogito implementation
+of the Cloud Native Computing Foundation (CNCF) Serverless Workflow specification.
+|
+|===
+
+++++
+</div>
+++++
+
+
+[tabs]
+====
+Tab A::
++
+[source,shell]
+--
+Contents of tab A.
+--
+Tab B::
++
+[source,java]
+--
+Contents of tab B.
+--
+Tab C::
++
+[source,c]
+--
+Contents of tab C.
+--
+====
