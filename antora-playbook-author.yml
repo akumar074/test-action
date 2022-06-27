@@ -7,7 +7,7 @@ antora:
 content:
   sources:
     - url: .
-      branches: HEAD
+      branches: [HEAD, main]
       start_path: serverlessworkflow
 ui:
   bundle:
