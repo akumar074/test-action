@@ -9,6 +9,8 @@ content:
     - url: git@github.com:akumar074/test-action.git
       branches: [main, 1.25]
       start_path: serverlessworkflow
+runtime:
+  fetch: true
 ui:
   bundle:
     url: ./antora/ui-bundle.zip
