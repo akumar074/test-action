@@ -1,6 +1,6 @@
 name: serverlessworkflow
 title: "Serverless Workflow Guides"
-version: ~
+version: '1.24'
 start_page: index.adoc
 nav:
 - "modules/ROOT/nav.adoc"
