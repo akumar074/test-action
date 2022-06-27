@@ -7,7 +7,7 @@ antora:
 content:
   sources:
     - url: git@github.com:akumar074/test-action.git
-      branches: [main, test-release]
+      branches: [main, 1.25]
       start_path: serverlessworkflow
 ui:
   bundle:
