@@ -6,7 +6,7 @@
 [.card]
 --
 [.card-title]
-xref:getting-started/create-your-first-workflow-service.adoc[Create your first workflow service]
+xref:getting-started/create-your-first-workflow.adoc[Create your first workflow service]
 [.card-description]
 Create your first workflow service
 --

@@ -21,4 +21,6 @@ jobs:
       - run: export DOCSEARCH_ENGINE=lunr
       - run: export NODE_PATH="$(npm -g root)"
       - run: npm -v
-      - run: npm run install-build
+      - run: npm i
+      - run: ./scripts/build.sh
+      - run: npm run build
