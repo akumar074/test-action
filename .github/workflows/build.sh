@@ -1,9 +1,8 @@
 #!/bin/bash
-# Build the docs site with the lunr search enabled
-
-export DOCSEARCH_ENABLED=true
-export DOCSEARCH_ENGINE=lunr
-export NODE_PATH="$(npm -g root)"
-
-antora='antora antora-playbook.yml'
-$antora
+# Validate xref
+if [[ $(npx antora --generator @antora/xref-validator antora-playbook-author.yml) ]]; then
+    npx antora --generator @antora/xref-validator antora-playbook-author.yml
+    exit 1
+else
+    echo "xref validated successfully"
+fi
