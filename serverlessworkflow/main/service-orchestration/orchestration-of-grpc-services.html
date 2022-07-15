@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Orchestration of gRPC based services :: Serverless Workflow Guides</title>
+    <title>Orchestrating the gRPC based services :: Kogito Serverless Workflow Guides</title>
     <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/search.css">
-<link rel="stylesheet" href="../../../_/css/menu.css"><script>var uiRootPath = '../../../_'</script>
+<link rel="stylesheet" href="../../../_/css/menu.css">
+<link rel="stylesheet" href="../../../_/css/tabs.css">
+<link rel="stylesheet" href="../../../_/css/navbar.css">
+<link rel="stylesheet" href="../../../_/css/custom.css">
+<link rel="stylesheet" href="../../../_/css/home.css"><script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
@@ -18,7 +22,7 @@
                     <img src="../../../_/img/kogitoLogo_default_64px.png" height="50px" alt="Kogito logo"/>
                 </a>
                 <a class="navbar-item" href="../../..">
-                    Serverless Workflow Guides
+                    Kogito Serverless Workflow Guides
                 </a>
             </div>
                 <div class="navbar-item search hide-for-print">
@@ -50,7 +54,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index.html">Serverless Workflow Guides</a></h3>
+    <h3 class="title"><a href="../index.html">Kogito Serverless Workflow Guides</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -62,9 +66,6 @@
     <a class="nav-link" href="../getting-started/create-your-first-workflow-service.html">Create your first workflow service</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../getting-started/getting-familiar-with-our-tooling.html">Getting familiar with our tooling</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../getting-started/cncf-serverless-workflow-specification-support.html">CNCF Serverless Workflow specification</a>
   </li>
 </ul>
@@ -74,22 +75,10 @@
     <span class="nav-text">Core</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/understanding-jq-expressions.html">Understanding JQ expressions</a>
+    <a class="nav-link" href="../core/understanding-jq-expressions.html">jq expressions in Serverless Workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/understanding-workflow-error-handling.html">Understanding workflow error handling</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/working-with-parallelism.html">Working with parallelism</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/accessing-workflow-metainformation-in-runtime.html">Accessing workflow metainformation in runtime</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/state-data-filtering.html">State data filtering</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/defining-an-input-schema-for-workflows.html">Defining an input schema for your workflows</a>
+    <a class="nav-link" href="../core/understanding-workflow-error-handling.html">Error handling in Serverless Workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/custom-functions-support.html">Custom functions for your Serverless Workflow service</a>
@@ -101,7 +90,31 @@
     <span class="nav-text">Tooling</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../tooling/tooling.html">Tooling</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-overview.html">Serverless Workflow editor</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-vscode-extension.html">VS Code extension for Serverless Workflow editor</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">Kogito Serverless Workflow Tools extension in Quarkus Dev UI</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/quarkus-dev-ui-extension/quarkus-dev-ui-workflow-instances-page.html">Workflow Instances in Kogito Serverless Workflow Tools extension</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tooling/quarkus-dev-ui-extension/quarkus-dev-ui-workflow-definition-page.html">Workflow Definitions in Kogito Serverless Workflow Tools extension</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tooling/kn-plugin-workflow-overview.html">Workflow plugin for Knative CLI</a>
   </li>
 </ul>
   </li>
@@ -110,10 +123,7 @@
     <span class="nav-text">Service Orchestration</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="orchestration-of-opnapi-based-services.html">Orchestration of OpenAPI based services</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="configuring-openapi-services-endpoints.html">Configuring OpenAPI services endpoints in different environments</a>
+    <a class="nav-link" href="orchestration-of-openapi-based-services.html">Orchestrating the OpenAPI services</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="orchestration-of-grpc-services.html">Orchestration of gRPC based services</a>
@@ -122,34 +132,10 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Eventing</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/handling-events-on-workflows.html">Handling events on workflows</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events with Kafka</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/consume-produce-events-with-knative-eventing.html">Consuming and producing events on Knative Eventing</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/event-correlation-with-workflows.html">Event correlation with workflow</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/working-with-callbacks.html">Working with callbacks</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <span class="nav-text">Security</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../security/authention-support-for-openapi-services.html">Authentication support for OpenAPI services</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../security/orchestrating-third-party-services-with-oauth2.html">Orchestrating third party services with OAuth2 authentication</a>
+    <a class="nav-link" href="../security/authention-support-for-openapi-services.html">Authentication for OpenAPI services in Serverless Workflow</a>
   </li>
 </ul>
   </li>
@@ -158,37 +144,10 @@
     <span class="nav-text">Testing and Troubleshooting</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/mocking-http-cloudevents-with-wiremock.html">Mocking HTTP CloudEvents sink with Wiremock</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../testing-and-troubleshooting/mocking-opnapi-services-with-wiremock.html">Mocking OpenAPI Services with Wiremock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Basic Integration Test with RestAssured</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/debugging-workflow-execution-runtime.html">Debugging the workflow execution in runtime</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/integration-tests-with-postgresql.html">Integration Test with PostgreSQL</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/development-tools-for-troubleshooting.html">Development tools for troubleshooting</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Persistence</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../persistence/persistence-with-postgresql.html">Persistence with PostgresSQL databases</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../persistence/workflow-database-for-db-admins.html">Workflows database for DB admins</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../persistence/data-consistency.html">Data consistency</a>
+    <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing your Serverless Workflow application using REST Assured</a>
   </li>
 </ul>
   </li>
@@ -200,46 +159,7 @@
     <a class="nav-link" href="../cloud/build-workflow-image-with-quarkus-cli.html">Building Serverless Workflow Images using Quarkus CLI</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/build-workflow-images-with-kn-cli.html">Building Workflow Images locally with KN CLI</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/build-workflow-images-with-tekton.html">Building Workflow Images with Tekton Pipelines</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/deploying-on-minikube.html">Deploying on Minikube</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/deploying-on-kubernetes-cluster.html">Deploying on Kubernetes Clusters</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/versioning-workflows-in-knative.html">Versioning workflows in Knative</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Integrations</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../integrations/expose-metrics-to-prometheus.html">Exposing the workflow base metrics to Prometheus</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../integrations/camel-k-integration.html">Integrating with Camel-K</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow runtime data in serverless dashboards</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Use Cases</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../use-cases/orchestration-based-saga-pattern.html">Orchestration-based SAGA pattern</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../use-cases/newsletter-subscription-example.html">Newsletter subscription example</a>
+    <a class="nav-link" href="../cloud/deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
   </li>
 </ul>
   </li>
@@ -250,18 +170,15 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Serverless Workflow Guides</span>
+    <span class="title">Kogito Serverless Workflow Guides</span>
     <span class="version">main</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../index.html">Serverless Workflow Guides</a>
+      <a class="title" href="../index.html">Kogito Serverless Workflow Guides</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">main</a>
-        </li>
-        <li class="version">
-          <a href="../../1.25/index.html">1.25</a>
         </li>
       </ul>
     </li>
@@ -276,18 +193,11 @@
   <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index.html">Serverless Workflow Guides</a></li>
+    <li><a href="../index.html">Kogito Serverless Workflow Guides</a></li>
     <li>Service Orchestration</li>
     <li><a href="orchestration-of-grpc-services.html">Orchestration of gRPC based services</a></li>
   </ul>
 </nav>
-<div class="page-versions">
-  <button class="version-menu-toggle" title="Show other versions of page">main</button>
-  <div class="version-menu">
-    <a class="version is-current" href="orchestration-of-grpc-services.html">main</a>
-    <a class="version" href="../../1.25/service-orchestration/orchestration-of-grpc-services.html">1.25</a>
-  </div>
-</div>
   <div class="edit-this-page"><a href="https://github.com/akumar074/test-action/edit/main/serverlessworkflow/modules/ROOT/pages/service-orchestration/orchestration-of-grpc-services.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
@@ -295,8 +205,219 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Orchestration of gRPC based services</h1>
+<h1 class="page">Orchestrating the gRPC based services</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>As a developer, you can invoke a gRPC service using a Serverless Workflow application that is run with Quarkus. This guide describes how to create a workflow that invokes a running gRPC service and how to configure properties to locate that running gRPC service.</p>
+</div>
+<div class="paragraph">
+<p>For information about gRPC concepts, see <a href="https://grpc.io/docs/what-is-grpc/core-concepts/">gRPC</a>.</p>
+</div>
+<div class="paragraph">
+<p>In order to illustrate how gRPC integration works, we are going to use an already existing <a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-client-rpc-quarkus">Serverless Workflow application</a>. This example greets a user in their preferred language by invoking a gRPC service.</p>
+</div>
+<div class="paragraph">
+<p>Relevant files of this Workflow Application are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-server-rpc-quarkus/src/main/proto/greeting.proto">gRPC proto file</a>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This file defines a greeter service, which consists of the <code>sayHello</code> method. The <code>sayHello</code> method accepts two parameters, including name of the user and an optional language to use in the greeting message (English by default). The <code>sayHello</code> method returns the greeting message in the appropriate language.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">// The greeter service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
 
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+  string language=2;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-client-rpc-quarkus/src/main/resources/jsongreet.sw.json">Workflow definition file</a>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This file defines an RPC <a href="https://github.com/serverlessworkflow/specification/blob/main/specification.md#using-functions-for-rpc-service-invocations">function</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"functions": [
+    {
+      "name": "sayHello",
+      "type": "rpc",
+      "operation": "greeting.proto#Greeter#SayHello"
+    }
+  ]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this <code>rpc</code> function, the <code>operation</code> property is composed of three tokens separated by <code>#</code>. The three tokens include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>URI of the proto file (<code>greeting.proto</code>)</p>
+</li>
+<li>
+<p>Name of the service (<code>Greeter</code>)</p>
+</li>
+<li>
+<p>Name of the method (<code>SayHello</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Kogito supports three URI schemes, including <code>http</code>, <code>file</code>, and <code>classpath</code> (default). Therefore, in the previous example, the <code>greeting.proto</code> is expected to be found in the project classpath.</p>
+</div>
+<div class="paragraph">
+<p>The execution of the workflow consists of a single <a href="https://github.com/serverlessworkflow/specification/blob/main/specification.md#operation-state">operation</a> state, which is composed of one <a href="https://github.com/serverlessworkflow/specification/blob/main/specification.md#action-definition">action</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json"> {
+    "name": "sayHello",
+    "functionRef" : {
+        "refName": "sayHello",
+        "arguments": {
+            "name": ".name",
+            "language": ".language"
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the previous example, the action invokes the <code>sayHello</code> RPC method using two model variables: <code>name</code> and <code>language</code>. These parameters are provided as part of the REST call that starts the workflow.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-client-rpc-quarkus/pom.xml">Maven POM</a>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>gRPC</code> functionality is included within <a href="https://github.com/kiegroup/kogito-runtimes/tree/main/quarkus/extensions/kogito-quarkus-serverless-workflow-extension">Serverless Workflow Quarkus extension</a>, which means you do not need to add specific dependencies for <code>gRPC</code> to work with Serverless Workflow.</p>
+</div>
+<div class="paragraph">
+<p>This <code>pom.xml</code> file contains the following <code>resource</code> node:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;resource&gt;
+ &lt;directory&gt;${project.basedir}/../serverless-workflow-greeting-server-rpc-quarkus/src/main/proto&lt;/directory&gt;
+ &lt;includes&gt;
+   &lt;include&gt;greeting.proto&lt;/include&gt;
+  &lt;/includes&gt;
+&lt;/resource&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The reason for this snippet to exist is to guarantee that the proto file is included in the classpath. Remember that in the Serverless Workflow file, the  URI for the proto file does not contain any scheme, therefore the proto file is expected to be accessible in the classpath.</p>
+</div>
+<div class="paragraph">
+<p>The previous, Maven based, approach can be used when the source code of the  Serverless Workflow and the gRPC server are stored in the same repository, but normally this will not be the case. If the proto file can be downloaded from a remote server, you might use the <code>http</code> scheme. If the proto file is not remotely accessible, you will need to manually obtain a copy of it and store in a directory that is included in the classpath (for example <code>src/main/resources</code>). Another possibility is to copy the proto file in a well known absolute path (that might a be a shared network file system) and use the <code>file</code> scheme.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-client-rpc-quarkus/src/main/resources/application.properties">Application properties</a>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the <code>application.properties</code> file, you can add the information for the Serverless Workflow application to locate the <code>gRPC</code> server.</p>
+</div>
+<div class="paragraph">
+<p>Internally, the Serverless Workflow implementation uses the same set of properties as <a href="https://quarkus.io/guides/grpc-service-consumption#client-configuration">Quarkus gRPC client</a>. The <code>client-name</code> used by Kogito is the service name declared in the proto file.</p>
+</div>
+<div class="paragraph">
+<p>So, since in our example we are calling a service called <code>Greeter</code>, we include the snippet below.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">quarkus.grpc.clients.Greeter.host=localhost
+quarkus.grpc.clients.Greeter.port=50051</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the same GitHub repository as the example application, there is a <a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-greeting-rpc-quarkus/serverless-workflow-greeting-server-rpc-quarkus">maven project</a> which provides a simple implementation of the <code>Greeter</code> service. By default, this gRPC server runs on port <code>50051</code>. Therefore, the same port is used in the <code>application.properties</code> file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="running-serverless-workflow-application"><a class="anchor" href="#running-serverless-workflow-application"></a>Running the Serverless Workflow application</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Before running the Serverless Workflow application, you need to start the gRPC server the workflow invokes. To run the gRPC server, navigate to the <code>serverless-workflow-greeting-server-rpc-quarkus</code> directory in a commmand terminal and enter the command</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">mvn compile exec:java -Dexec.mainClass="org.kie.kogito.examples.sw.greeting.GreeterService"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Now you need to run the Serverless Workflow application</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">mvn clean quarkus:dev</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Once the Serverless Workflow application is started, you can invoke the workflow instance using any http client, such as <code>curl</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d '{"workflowdata" : {"name": "John", "language": "English"}}' http://localhost:8080/jsongreet</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The answer should be similar to this one</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">{"id":"4376cc50-42d4-45ef-8a5e-6e403a654a30","workflowdata":{"name":"John","language":"English","message":"Hello from gRPC service John"}}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also try greeting in a different language</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d '{"workflowdata" : {"name": "Javi", "language": "Spanish"}}' http://localhost:8080/jsongreet</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In response, you will see the greeting in Spanish language.</p>
+</div>
+</div>
+</div>
 </article>
   </div>
 </main>
@@ -307,6 +428,7 @@
 </footer>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/tabsBehavior.js"></script>
 <script src="../../../_/js/vendor/lunr.js"></script>
 <script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
 <script async src="../../../search-index.js"></script>
