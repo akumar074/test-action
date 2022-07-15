@@ -22,5 +22,5 @@ jobs:
       - run: export NODE_PATH="$(npm -g root)"
       - run: npm -v
       - run: npm i
-      - run: ./build.sh
+      - run: ./scripts/build.sh
       - run: npm run build
