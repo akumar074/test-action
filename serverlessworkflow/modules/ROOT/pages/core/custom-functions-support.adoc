@@ -1,6 +1,6 @@
 Custom functions for your Serverless Workflow service
 =====================================================
-v1.0, 06-10-2022
+06-10-2022
 :compat-mode!:
 // Metadata:
 :description: Custom Functions Support
@@ -102,7 +102,7 @@ public class MyInterfaceOrClass {
         // do whatever I want with the JsonNode:
         // { "workflowdata": {} }
     }
-    
+
     public JsonNode myMethod(JsonNode workflowData) {
         // do whatever I want with the JsonNode:
         // { "workflowdata": {} }
@@ -167,7 +167,7 @@ In the previous example, the `JsonNode` that the `java` function returns is the 
 
 [WARNING]
 ====
-Avoid using `java` functions to call the external services, instead you can use the xref:service-orchestration/orchestration-of-opnapi-based-services.adoc[services orchestration features].
+Avoid using `java` functions to call the external services, instead you can use the xref:service-orchestration/orchestration-of-openapi-based-services.adoc[services orchestration features].
 ====
 
 == Additional resources
